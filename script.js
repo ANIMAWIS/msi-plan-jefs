@@ -147,7 +147,7 @@
 
         const selectedApps = collectSelectedApps();
         const appsText = selectedApps.length ? ('Apps: ' + selectedApps.map(a=>a.name).join(', ') + '.') : '';
-        const message = `veio da pagina MSI Fibra. Quero contratar: ${plan}. ${appsText} Nome: ${name}. Endereco: ${address}. Contato: ${phone}`;
+        const message = `Vim da pagina MSI Fibra. Quero contratar: ${plan}. ${appsText} Nome: ${name}. Endereco: ${address}. Contato: ${phone}`;
         const url = `https://wa.me/${WA_NUM}?text=` + encodeURIComponent(message);
         // save to localStorage log
         const orders = JSON.parse(localStorage.getItem('msi_orders')||'[]');
